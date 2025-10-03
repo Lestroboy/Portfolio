@@ -1,0 +1,115 @@
+.projects {
+  padding: 6rem 2rem;
+  background-color: #1d1d24;
+  min-height: 100vh;
+}
+
+.project-page {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  gap: 4rem;
+  padding-top: 80px;
+}
+
+/* Project Card (left) */
+.project-card {
+  margin-left: 120px;
+  margin-top: 120px;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  background-color:rgb(241, 213, 177);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-link {
+  text-decoration: none;
+  font-size: 20px;
+  color:antiquewhite;
+  background-color: #333;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.project-link:hover {
+  text-decoration: none;
+  background-color: #545454;
+  border: 3px solid black;
+}
+
+/* Images Stack (right) */
+.projects-stack {
+  margin-left: 260px;  
+  position: relative;
+  width: 500px;  /* width of container */
+  height: 300px; /* height of images */
+}
+
+.project-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, z-index 0.3s;
+  cursor: pointer;
+}
+
+/* Stack images starting from left, 70% overlap */
+.project-image-0 {
+  left: 40%;
+  top: 150%;
+  z-index: 2;
+}
+
+.project-image-1 {
+  left: 0%;
+  top: 20%;
+  z-index: 0;
+}
+
+.project-image-2 {
+  left: 100%; 
+  top: 90%;
+  z-index: 3;
+}
+
+.project-image-3 {
+  left: 80%; 
+  top: -25%;
+  z-index: 1;
+}
+
+.project-image:hover {
+  transform: scale(1.20);
+  z-index: 10;
+}

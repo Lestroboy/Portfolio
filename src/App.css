@@ -1,0 +1,24 @@
+/* App.css *//* Global CSS or App.css */
+.download-cv {
+  position: fixed;        /* fixed position so it stays visible */
+  bottom: 30px;           /* distance from bottom */
+  right: 30px;            /* distance from right */
+  background-color: #ff5733;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.2s, transform 0.2s;
+  z-index: 1000;          /* stays above other elements */
+}
+
+.download-cv:hover {
+  background-color: orangered;
+  transform: translateY(-3px);
+}

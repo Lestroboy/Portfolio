@@ -1,0 +1,104 @@
+.about {
+  padding: 8rem 2rem;
+  background-color: #1d1d24;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about-page {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Left side: image + paragraph */
+.about-me {
+  flex: 0 0 750px; /* fixed image width */
+}
+
+.about-img {
+  width: 500px;
+  padding-left: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.about-me p {
+  color:aliceblue;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  padding-left: 30px;
+}
+
+/* Right side: skills */
+.skill-text {
+  flex: 1; /* take remaining width */
+  padding-top: 150px;
+  padding-left: 500px;
+}
+
+.skill-text h3 {
+  color: aliceblue;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-left: 250px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* force specific widths to control number of icons per row */
+.skill-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  transition: transform 0.2s, background-color 0.2s;
+  cursor: default;
+}
+
+.skill-pill i {
+  font-size: 3.5rem;
+}
+
+/* control exact row layout */
+.skills-container span:nth-child(-n+2) {
+  /* first 2 icons take first row */
+  flex: 0 0 45%;
+}
+
+.skills-container span:nth-child(n+3):nth-child(-n+5) {
+  /* next 3 icons take second row */
+  flex: 0 0 30%;
+}
+
+.skills-container span:nth-child(n+6):nth-child(-n+7) {
+  /* last 2 icons take third row */
+  flex: 0 0 45%;
+}
+
+.skill-pill:hover {
+  transform: translateY(-3px);
+}
+
+.skills-container span:hover {
+    border: 3px solid rgb(106, 106, 106);
+}
